@@ -1,0 +1,82 @@
+@import "styles/fibonacci.scss";
+@import "styles/utilities.scss";
+
+$color-primary-0: #363636; // Main Primary color */
+$color-primary-1: #bfbebe;
+$color-primary-2: #6d6d6d;
+$color-primary-3: #000000;
+$color-primary-4: #030202;
+$color-error-1: #ff0000;
+
+body {
+  background-color: $color-primary-2;
+  color: $color-primary-1;
+
+  .error {
+    color: $color-error-1;
+    font-weight: 600;
+  }
+
+  .result {
+    font-size: 32px;
+  }
+
+  #header-image {
+    width: 100vw;
+    height: calc(100vw * (9 / 42));
+  }
+
+  #container-main {
+    padding: 0 20px;
+    @media (min-width: 2560px) {
+      width: 1920px;
+    }
+    @media (min-width: 1920px) and (max-width: 2559px) {
+      width: 1280px;
+    }
+    @media (min-width: 1280px) and (max-width: 1919px) {
+      width: 1024px;
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+      width: 800px;
+    }
+    @media (min-width: 800px) and (max-width: 1023px) {
+      width: 640px;
+    }
+    @media (min-width: 640px) and (max-width: 799px) {
+      width: 480px;
+    }
+    @media (max-width: 639px) {
+      width: 100%;
+      margin: 0;
+    }
+
+    height: 100vh;
+    display: flex;
+    background-color: $color-primary-0;
+    margin: 0 auto;
+
+    #container-components {
+      @media (min-width: 2560px) {
+        width: 1440px;
+      }
+      @media (min-width: 1920px) and (max-width: 2559px) {
+        width: 1024px;
+      }
+      @media (min-width: 1280px) and (max-width: 1919px) {
+        width: 800px;
+      }
+      @media (min-width: 1024px) and (max-width: 1279px) {
+        width: 640px;
+      }
+      @media (min-width: 800px) and (max-width: 1023px) {
+        width: 480px;
+      }
+      @media (max-width: 799px) {
+        width: 100%;
+      }
+
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <copy todir="/home/connor/Development/ExampleProject/backEnd/fibonacci/target/classes/public">
+      <fileset dir="/home/connor/Development/ExampleProject/backEnd/fibonacci/front-end/build" />
+    </copy>
+  </target>
+</project>

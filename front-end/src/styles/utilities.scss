@@ -1,0 +1,15 @@
+.parallax {
+  /* Set a specific height */
+  max-height: 720px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 110vw;
+}
+
+.fibonacci-bg {
+  /* The image used */
+  background-image: url("https://nextcloud.techrekt.com/s/TiLkazoonMC4NRR/download/fibonacci.png");
+}

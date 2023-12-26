@@ -1,0 +1,57 @@
+$color-primary-0: #363636; // Main Primary color */
+$color-primary-1: #bfbebe;
+$color-primary-2: #6d6d6d;
+$color-primary-3: #000000;
+$color-primary-4: #030202;
+$color-error-1: #ff0000;
+
+#fibonacci-component {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .component-body {
+    display: flex;
+    width: 100%;
+    .component-form {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      .component-form-label {
+        font-weight: 300;
+      }
+      .component-inputs {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+
+        @media (max-width: 639px) {
+          flex-direction: column;
+          .component-text-input {
+            width: 100% !important;
+            margin-bottom: 5px;
+          }
+          .component-submit {
+            align-self: flex-end;
+          }
+        }
+
+        .component-text-input {
+          display: flex;
+          width: calc(100% - 55px);
+          border: 0;
+          border-radius: 5px;
+          box-shadow: 0px 0px 5px $color-primary-0 inset;
+        }
+        .component-submit {
+          margin-left: 5px;
+          width: max-content;
+          border: 0;
+          border-radius: 5px;
+          background-color: #030202;
+          color: $color-primary-1;
+        }
+      }
+    }
+  }
+}
